@@ -1,0 +1,51 @@
+*{
+    font-family: Montserrat;
+}
+body{
+    background-image: url("../img/nissangtr.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+h2{
+    color: white;
+    padding-left: 50%;
+}
+.password{
+    color: white;
+}
+#password{
+    border: 2px solid #0324e0;
+}
+.username{
+    color: white;
+}
+.button {
+    background-color: #0324e0; 
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0324e0;
+  }
+.button1:hover {
+    background-color: #0324e0;
+    color: white;
+}
+.tekst{
+    background-color: antiquewhite;
+    color:#0324e0;
+    
+}
+#filmovi{
+    color: white;
+}
