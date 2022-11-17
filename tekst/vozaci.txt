@@ -1,1 +1,3 @@
-Vozaci su najbolji jer nmp sta drugo da prisem a mrzi me u 4 da razmisljam sta da pisem
+Vozaci trebaju da budu najbrzi da bi pobedili trku. <br>
+Pritiskom na dugme Vozaci mozete da obrisete vozaca iz baze ili da dodate novog vozaca. <br>
+Isto mozete da vidite koja kola voze vozaci.

@@ -22,7 +22,7 @@
     <h2>AUTOMOBILI</h2>
     <button type="submit" id="dugme1" class="button button1" name="submit">Info o automobilima</button>
     <button type="submit" id="dugme2" class="button button1" name="submit">Info o vozacima</button>
-    <button type="submit" name="skloni" id="skloni" class="button button1" onclick="skloniDiv('textHaled')">Skloni tekst</button>
+    <button type="submit" name="skloni" id="skloni" class="button button1" onclick="skloniDiv('text')">Skloni tekst</button>
     
     
     <button type="submit" id="dugme3" class="button button1" name="submit">Filmovi</button>
@@ -32,7 +32,7 @@
     <button type="submit" id="dugme5" class="button button1" name="submit"><a href="vozaci.php" target="_blank">Vozaci</a></button>
 
     <br><br><br><br>
-    <div id="textHaled" style="background-color: white"></div>
+    <div id="text" style="background-color: white"></div>
     <div id="filmovi"></div>
     <script>
     //primena AJAXA 1
@@ -47,7 +47,7 @@
 
         xhr.onload = function () {
             if (this.status == 200) {
-            document.getElementById("textHaled").innerHTML = this.responseText; //ispisi taj tekst na stranici
+            document.getElementById("text").innerHTML = this.responseText; //ispisi taj tekst na stranici
             }
         };
 
@@ -69,7 +69,7 @@
 
         xhr.onload = function () {
             if (this.status == 200) {
-            document.getElementById("textHaled").innerHTML = this.responseText; //ispisi taj tekst na stranici
+            document.getElementById("text").innerHTML = this.responseText; //ispisi taj tekst na stranici
             }
         };
 
@@ -95,7 +95,7 @@
 
             //prolazim kroz niz objekata 
             for (var i in filmovi) {
-              output += "<ul>"+"<li>Broj: " + filmovi[i].broj + "</li>"+"<li>Ime: " + filmovi[i].ime;"</li>"+"</ul>";
+              output +="<ul>"+"<li>Broj: " +filmovi[i].broj +" </li>" +"<li>Ime filma: " +filmovi[i].ime +" </li>" +"</ul>";
             }
 
             document.getElementById("filmovi").innerHTML = output;

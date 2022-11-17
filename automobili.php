@@ -23,12 +23,12 @@
     </style>
 </head>
 <body>
-    <!-- forma za dodavananje automobila -->
+    
     <div id="unosimAutomobil">
     <fieldset>
       <form action="" name="unosAutomobila" method="post">
       <label for="">Dodajte novi automobil: </label><br><br>
-        <!-- <p>Dodajte novi automobil: </p> -->
+        
         <label for="marka">Marka:</label><br>
         <input type="text" name="marka" id="marka" placeholder="Unesi marka"> <br><br>
         <label for="model">Model: </label><br>
@@ -40,17 +40,16 @@
         <br>
     </form>
     <br>
-    <!-- <input type="submit" value="Rezultat" onclick="skloniBlokove(blok1, 'prikaziSveStoPostoji')"> -->
+    
     </fieldset>
     </div>
     <br>
 
-    <!-- <div id="proveravamAutomobila"> -->
-      <!-- forma za proveru -->
+    
       <fieldset>
       <form action="" name="proveravanje" method="post">
       <label for="">Brisi: </label><br><br>
-      <!-- <p>Proverite koje knjige je uzeo konkretan čitalac/obrišite čitaoca: </p> -->
+      
         <label for="prov">Automobil: </label>
         <select name="auto" id="auto">
                     <?php 
@@ -79,13 +78,13 @@
 </html>
 <?php
 
-    //  upisivanje novog auta u bazu 
+    
     if(isset($_POST['unesiAuto']))
     {
       if($_POST['marka'] !== "" && $_POST['model'] !== "" && $_POST['godProizvodnje'] !== "")
       {
           $automobil = new Automobil($_POST['marka'], $_POST['model'], $_POST['godProizvodnje']);
-          //provera da li postoji u bazi
+          
           if(!$automobil->postojiUBazi($link))
           $automobil->upisiUBazu($link);
           else
@@ -93,7 +92,7 @@
       }
       echo "zavrseno";
     }
-     //BrisanjeAuta
+     
    if(isset($_POST['brisanje']))
    {
       $auto = $_POST['auto'] ;

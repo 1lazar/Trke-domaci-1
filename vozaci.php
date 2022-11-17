@@ -41,24 +41,24 @@
 </head>
 <body>
     
-    <!-- div za prikazSvih -->
+    
     <div id="divZaPrikazSvih" style="display:none">
         <label for="rbPrikaz">Prikaži sve: </label>
         <a href="vozaci.php"><input type="submit" value="Potvrdi" name="rbPrikaz" id="rbPrikaz"></a>
    </div>
 
 
-    <!-- forma za dodavanje novog vozaca -->
+    
     <div id="FormaDodavanjeVozaca">
     <fieldset>
     <form action="" method="post">
     <label for="">Dodajte novog vozaca: </label><br><br>
-    <!-- <p>Dodajte novog vozaca: </p> -->
+    
         <label for="imeNovogVozaca">Ime vozaca: </label>
         <input type="text" name="imeNovogVozaca" id="imeNovogVozaca">
         <label for="prezimeNovogVozaca">Prezime vozaca: </label>
         <input type="text" name="prezimeNovogVozaca" id="prezimeNovogVozaca">
-        <!-- padajuca lista svih auta -->
+        
         <label for="sviAuto">Auto: </label>
         <select name="sviAuto" id="sviAuto">
             <?php 
@@ -73,12 +73,10 @@
             ?>
         </select>
         
-        <!-- dugme za brisanje knjige -->
-        <!-- u slucaju da mora da se dodaju novi pisac ili zanr -->
+        
         </label>
         <br><br>
         <label for="">Ukoliko auto ne postoji u padajućoj listi, dodajte ga ovde: </label><br><br>
-        <!-- <p>Ukoliko pisac ne postoji u padajućoj listi, dodajte ga ovde: </p> -->
         <label for="markaNovogAuta">Marka auta: </label>
         <input type="text" name="markaNovogAuta" id="markaNovogAuta">
         <label for="modelNovogAuta">Model auta: </label>
@@ -87,7 +85,6 @@
         <input type="number" name="godProiz" id="godProiz">
         <br><br>
         
-        <!-- dugme za dodavanje knjige -->
         <button type="submit" name="dodavanjeVozaca" onclick="proveriFormuZaVozaca()">Dodaj vozaca</button>
         <button type="submit" name="brisanje" onclick="proveriFormuZaBrisanjeVozaca()">Obriši vozaca</button>
     </form>
@@ -96,7 +93,7 @@
     </fieldset>
     </div>
     <br>
-    <!-- prikaz vozaca po kolima -->
+    
     <div id="FormaZaPrikazVozacaPoKolima">
         <fieldset>
             <form action="" method="post">
@@ -126,7 +123,7 @@
 </body>
 </html>
 <?php
-    //dodavanje vozaca
+    
     if(isset($_POST['dodavanjeVozaca']))
     {
         $marka;
@@ -165,7 +162,7 @@
 
 
     }
-    //BrisanjeVozaca
+    
    if(isset($_POST['brisanje']))
    {
         $ime = $_POST['imeNovogVozaca'];
@@ -182,7 +179,7 @@
    }
 
 
-   //provera koji vozac sta vozi
+   
     if(isset($_POST['proveriAuto']))
     {
 

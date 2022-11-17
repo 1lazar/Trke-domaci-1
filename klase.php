@@ -25,7 +25,7 @@
             return $povratniNiz;
         }
 
-        //upisivanje auta u bazu
+        
         function upisiUBazu($baza)
         {
             $sqlUpit = "INSERT INTO automobili(marka, model, godinaProizvodnje) VALUES('$this->marka', '$this->model', '$this->godProizvodnje')";
@@ -36,7 +36,7 @@
                 echo "Došlo je do greške prilikom ubacivanja čitaoca!".'<br>'; 
         }
 
-        //da li citalac postoji u bazi
+        
         function postojiUBazi($baza)
         {
             $rez = self::vratiSveAutomobile($baza);
@@ -49,7 +49,7 @@
             return false;
         }
         
-        //vracam rezultat select * upita, jer ga imam na dosta mesta
+       
         static function vratiSveAutomobile($baza)
         {
             $sql = "SELECT * FROM automobili";
@@ -115,7 +115,6 @@
             return $rez;
         }
 
-        //dodavanje knjige u bazu
         function dodajUBazu($baza)
         {
             $sqlUpit = "INSERT INTO vozaci(ime,prezime, auto) VALUES('$this->ime', '$this->prezime', '$this->auto')";
@@ -126,7 +125,7 @@
                 echo "Došlo je do greške prilikom dodavanja vozaca!".'<br>';
         }
 
-        //izbacivanje knjige iz baze
+       
         function izbaciVozacaIzBaze($baza)
         {
             $sqlUpit = "DELETE FROM vozaci WHERE ime = '$this->ime' AND prezime = '$this->prezime'";
