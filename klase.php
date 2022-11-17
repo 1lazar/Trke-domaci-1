@@ -85,10 +85,8 @@
         //izbacivanje knjige iz baze
         function izbaciAutaIzBaze($baza)
         {
-            echo $this->model;
-            $sqlUpit = "DELETE FROM automobili WHERE marka == '$this->marka' AND model == '$this->model' AND godinaProizvodnje = '$this->godProizvodnje'";
+            $sqlUpit = "DELETE FROM automobili WHERE marka = '$this->marka' AND model = '$this->model'";
             $rez = mysqli_query($baza, $sqlUpit);
-            
             if($rez)
                 echo "Auto je uspešno obrisan iz baze!".'<br>';
             else  

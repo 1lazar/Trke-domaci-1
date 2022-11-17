@@ -20,8 +20,8 @@
 <body>
     
     <h2>AUTOMOBILI</h2>
-    <button type="submit" id="dugme1" class="button button1" name="submit">automobilima</button>
-    <button type="submit" id="dugme2" class="button button1" name="submit">vozacima</button>
+    <button type="submit" id="dugme1" class="button button1" name="submit">Info o automobilima</button>
+    <button type="submit" id="dugme2" class="button button1" name="submit">Info o vozacima</button>
     <button type="submit" name="skloni" id="skloni" class="button button1" onclick="skloniDiv('textHaled')">Skloni tekst</button>
     
     
